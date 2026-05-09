@@ -1,0 +1,38 @@
+{
+  "name": "payment-system",
+  "version": "1.0.0",
+  "description": "Production-grade payment processing system with Express, MongoDB, Redis, and BullMQ",
+  "main": "src/app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --runInBand --forceExit --coverage",
+    "self-test": "node src/selfTest.js",
+    "docs": "echo 'Swagger available at http://localhost:3000/api/docs'"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bullmq": "^5.10.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "ioredis": "^5.4.1",
+    "joi": "^17.13.3",
+    "mongoose": "^8.6.1",
+    "rate-limit-redis": "^4.2.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^10.0.0",
+    "winston": "^3.13.1"
+  },
+  "devDependencies": {
+    "ioredis-mock": "^8.9.0",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.0.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}
