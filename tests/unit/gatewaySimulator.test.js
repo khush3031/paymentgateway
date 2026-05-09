@@ -22,7 +22,7 @@ describe('GatewaySimulator', () => {
 
   test('Returns declined result', async () => {
     const simulator = new GatewaySimulator({
-      random: () => 0.3,
+      random: () => 0.1,
       sleep: jest.fn().mockResolvedValue()
     });
 
@@ -49,7 +49,7 @@ describe('GatewaySimulator', () => {
 
   test('Throws GatewayUnavailableError on unavailability', async () => {
     const simulator = new GatewaySimulator({
-      random: () => 0.2,
+      random: () => 0.04,
       sleep: jest.fn().mockResolvedValue()
     });
 

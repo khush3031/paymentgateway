@@ -3,5 +3,5 @@ coverage/
 logs/
 .env
 npm-debug.log*
-package-lock.json
 .DS_Store
+*.log
